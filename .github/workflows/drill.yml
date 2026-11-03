@@ -1,0 +1,12 @@
+name: drill
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  stuck-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate stuck/wedged build
+        run: sleep 900
